@@ -8,7 +8,7 @@ namespace DemoWebAppMVC.Models
 {
 	public class LMSDbContext : DbContext
 	{
-		public LMSDbContext() : base(@"Server=WIN2019;Database=LMSDB;Trusted_Connection=True;")
+		public LMSDbContext() : base(@"Server="your_server_name";Database=LMSDB;Trusted_Connection=True;")
 		{
 			Database.SetInitializer(new CreateDatabaseIfNotExists<LMSDbContext>());
 		}
